@@ -1,6 +1,6 @@
 import requests
 def test_api():
-    response = requests.get("https://jsonplaceholder.typicode.com/posts/1")
+    response = requests.get("https://jsonplaceholder.typicode.com/posts/1",timeout=10)
     s = response.status_code
     assert s == 200
     data = response.json()
