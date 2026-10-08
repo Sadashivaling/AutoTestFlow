@@ -28,3 +28,6 @@ jobs:
 
       - name: Build Docker image
         run: docker build -t autotestflow .
+        
+      - name: Run tests in Docker
+        run: docker run --rm autotestflow
